@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas Orion | Créditos Rápidos, Seguros y 100% Online en Colombia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orion: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0066ff',
+                            600: '#0052cc',
+                            800: '#0a192f',
+                            900: '#030712',
+                            accent: '#00e5a3',
+                            accentDark: '#00b37e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom slider styling */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 10px;
+            cursor: pointer;
+            background: #e2e8f0;
+            border-radius: 9999px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            background: #00e5a3;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -8px;
+            box-shadow: 0 4px 10px rgba(0, 229, 163, 0.4);
+            transition: transform 0.15s ease, background-color 0.15s ease;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            background: #00b37e;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(0, 102, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-orion-accent selection:text-orion-900">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-orion-900 text-slate-300 text-xs sm:text-sm py-2.5 px-4 text-center font-medium border-b border-slate-800">
+        <span class="inline-flex items-center gap-2 flex-wrap justify-center">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-orion-accent animate-pulse"></span>
+            ¡Desembolsos inmediatos en menos de 15 minutos directos a tu cuenta bancaria! 🇨🇴
+        </span>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <svg class="h-12 sm:h-14 w-auto transition-transform group-hover:scale-105" viewBox="0 0 520 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(110, 10)">
+                            <rect x="0" y="80" width="22" height="60" fill="black"/>
+                            <rect x="36" y="45" width="22" height="95" fill="black"/>
+                            <rect x="72" y="0" width="22" height="140" fill="black"/>
+                            <path d="M-20 120 L20 80 L52 100 L115 15 L95 15 M115 15 L115 35" stroke="black" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon points="120,5 85,15 110,40" fill="black"/>
+                        </g>
+
+                        <text x="235" y="130" font-family="'Georgia', 'Times New Roman', serif" font-weight="900" font-size="34" fill="black" letter-spacing="2">FINANZAS</text>
+
+                        <g transform="translate(0, 120)">
+                            <ellipse cx="105" cy="85" rx="75" ry="42" stroke="black" stroke-width="7" fill="none" transform="rotate(-15, 105, 85)"/>
+                            <ellipse cx="105" cy="85" rx="73" ry="40" stroke="#0066FF" stroke-width="6" fill="none" stroke-dasharray="160 300" transform="rotate(-15, 105, 85)"/>
+                            <text x="135" y="115" font-family="'Georgia', 'Times New Roman', serif" font-weight="900" font-size="105" fill="#0066FF" letter-spacing="-1">ORION</text>
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#calculadora" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">Solicitar Crédito</a>
+                    <a href="#como-funciona" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">Cómo Funciona</a>
+                    <a href="#beneficios" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">Beneficios</a>
+                    <a href="#opiniones" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">Opiniones</a>
+                    <a href="#aliados" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">Aliados</a>
+                    <a href="#faq" class="text-sm font-semibold text-slate-600 hover:text-orion-500 transition-colors">FAQ</a>
+                </nav>
+
+                <!-- ACTION BUTTONS -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <button onclick="handleLoanRequest()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Contactar Asesor</span>
+                    </button>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-orion-800 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV MENU -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#calculadora" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Solicitar Crédito</a>
+            <a href="#como-funciona" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Cómo Funciona</a>
+            <a href="#beneficios" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Beneficios</a>
+            <a href="#opiniones" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Opiniones</a>
+            <a href="#aliados" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Aliados</a>
+            <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-100">Preguntas Frecuentes</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="handleLoanRequest()" class="w-full py-3 rounded-xl bg-emerald-500 text-white font-bold text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Solicitar por WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH LOAN CALCULATOR -->
+    <section id="calculadora" class="relative pt-12 pb-20 lg:pt-20 lg:pb-24 overflow-hidden bg-gradient-to-b from-slate-100 via-orion-50/40 to-white bg-grid-pattern">
+        
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-orion-500/10 rounded-full filter blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-orion-accent/10 rounded-full filter blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO TEXT CONTENT -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orion-50 border border-orion-100 text-orion-600 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved text-orion-accentDark"></i> Entidad Financiera Verificada
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-orion-800 leading-[1.15] tracking-tight">
+                        Tu crédito rápido, seguro y <span class="text-transparent bg-clip-text bg-gradient-to-r from-orion-500 to-orion-accent">100% online</span> en Colombia
+                    </h1>
+                    
+                    <p class="text-lg text-slate-600 font-normal max-w-xl mx-auto lg:mx-0">
+                        Obtén préstamos desde <strong>$1.000.000 COP</strong> hasta <strong>$100.000.000 COP</strong> en tiempo récord. Sin papeleos físicos, sin codeudor y con desembolso a tu cuenta.
+                    </p>
+
+                    <div class="pt-2 grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check font-bold"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Sin codeudor</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check font-bold"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Aprobación Inmediata</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check font-bold"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Directo a tu banco</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check font-bold"></i>
+                            </div>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-700">Transparencia Total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOAN CALCULATOR WIDGET CARD -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl shadow-2xl border border-slate-200/80 p-6 sm:p-8 relative">
+                        
+                        <div class="flex justify-between items-center pb-6 border-b border-slate-100">
+                            <div>
+                                <h3 class="text-xl font-extrabold text-orion-800">Calcula tu Préstamo</h3>
+                                <p class="text-xs text-slate-500 font-medium">Selecciona el dinero y las cuotas deseadas</p>
+                            </div>
+                            <span class="bg-emerald-50 text-emerald-600 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200">
+                                Sin trámites
+                            </span>
+                        </div>
+
+                        <!-- SLIDER 1: LOAN AMOUNT ($1.000.000 TO $100.000.000) -->
+                        <div class="mt-6 space-y-3">
+                            <div class="flex justify-between items-baseline">
+                                <label class="text-sm font-bold text-slate-700">Monto que necesitas</label>
+                                <span id="amountDisplay" class="text-2xl font-black text-orion-500">$ 5.000.000 COP</span>
+                            </div>
+                            <input type="range" id="amountSlider" min="1000000" max="100000000" step="500000" value="5000000">
+                            <div class="flex justify-between text-xs font-semibold text-slate-400">
+                                <span>$1.000.000</span>
+                                <span>$100.000.000</span>
+                            </div>
+                        </div>
+
+                        <!-- SLIDER 2: INSTALLMENTS (1 TO 72 CUOTAS) -->
+                        <div class="mt-6 space-y-3">
+                            <div class="flex justify-between items-baseline">
+                                <label class="text-sm font-bold text-slate-700">Número de cuotas</label>
+                                <span id="installmentsDisplay" class="text-2xl font-black text-orion-800">12 Cuotas</span>
+                            </div>
+                            <input type="range" id="installmentsSlider" min="1" max="72" step="1" value="12">
+                            <div class="flex justify-between text-xs font-semibold text-slate-400">
+                                <span>1 Cuota</span>
+                                <span>72 Cuotas</span>
+                            </div>
+                        </div>
+
+                        <!-- SELECTED SUMMARY HIGHLIGHT -->
+                        <div class="mt-6 bg-slate-50 rounded-2xl p-5 border border-slate-100 text-center space-y-1">
+                            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider block">Resumen de tu selección</span>
+                            <p class="text-lg font-bold text-orion-800">
+                                Solicitud de <span id="summaryAmount" class="text-orion-500">$ 5.000.000 COP</span> a <span id="summaryInstallments" class="text-orion-800">12 cuotas</span>
+                            </p>
+                        </div>
+
+                        <!-- CTA BUTTON LINKED TO WHATSAPP -->
+                        <button onclick="handleLoanRequest()" class="w-full mt-6 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl shadow-emerald-500/20 hover:shadow-2xl transition-all flex items-center justify-center gap-3 text-lg">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Solicitar mi crédito por WhatsApp</span>
+                        </button>
+
+                        <p class="text-[11px] text-center text-slate-400 mt-3">
+                            Respuesta inmediata y desembolso 100% digital a tu cuenta bancaria.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VERIFICATION CARD SECTION -->
+    <section class="py-10 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-emerald-400/80 shadow-xl relative overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                        
+                        <!-- RUES LOGO -->
+                        <div class="w-20 h-20 rounded-2xl bg-slate-50 border border-slate-200 p-2 flex flex-col items-center justify-center shrink-0 shadow-sm">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-lime-500"></span>
+                            </div>
+                            <span class="text-xl font-black text-blue-900 tracking-tighter">rues</span>
+                            <span class="text-[8px] font-bold text-blue-700 uppercase tracking-tight text-center leading-none mt-0.5">REGISTRO ÚNICO</span>
+                        </div>
+
+                        <!-- VERIFICATION TITLE & DETAILS -->
+                        <div class="space-y-1">
+                            <div class="flex items-center justify-center sm:justify-start gap-2">
+                                <h4 class="text-lg sm:text-xl font-black text-slate-900">Verificado y Certificado por DataCrédito Experian</h4>
+                                <div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs shrink-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
+                                <strong>Orion Inversiones Financieras S.A.S.</strong> • Empresa registrada y al día con sus obligaciones tributarias y comerciales en Colombia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT BADGES & DIRECT LINK BUTTON -->
+                    <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full md:w-auto">
+                        <div class="px-4 py-2 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 font-extrabold text-sm tracking-wide text-center w-full sm:w-auto">
+                            NIT 900693700
+                        </div>
+                        <a href="https://www.datacreditoempresas.com.co/directorio/orion-inversiones-financieras-s-a-s.html" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-md hover:shadow-lg transition-all">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                            <span>Verificar en DataCrédito</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROMOTIONAL "FINANZAS ORION DICE SÍ" SECTION -->
+    <section class="py-16 sm:py-24 bg-white overflow-hidden relative border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-left">
+                    <span class="text-sm font-bold text-orion-500 uppercase tracking-wider block">
+                        ¿El banco te dijo que no?
+                    </span>
+                    
+                    <h2 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-none">
+                        Finanzas Orion <span class="text-orion-500">dice sí</span>
+                    </h2>
+                    
+                    <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+                        Evaluamos tu capacidad de pago actual, no solo tu historial crediticio previo.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-3.5 pb-3 border-b border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm sm:text-base font-semibold text-slate-700">¿Estás reportado en las centrales de riesgo?</span>
+                        </div>
+
+                        <div class="flex items-center gap-3.5 pb-3 border-b border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm sm:text-base font-semibold text-slate-700">¿El banco te pidió demasiados requisitos o te rechazó?</span>
+                        </div>
+
+                        <div class="flex items-center gap-3.5 pb-3 border-b border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm sm:text-base font-semibold text-slate-700">¿Tienes una cuenta bancaria activa a tu nombre?</span>
+                        </div>
+
+                        <div class="flex items-center gap-3.5 pb-3 border-b border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm sm:text-base font-semibold text-slate-700">¿Eres independiente, freelance, empleado o pensionado?</span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm sm:text-base font-extrabold text-slate-800 pt-2">
+                        Si te identificas con esto, en Finanzas Orion tenemos tu préstamo en línea listo para ti.
+                    </p>
+
+                    <div class="pt-2">
+                        <button onclick="handleLoanRequest()" class="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-rose-500 hover:from-orange-600 hover:to-rose-600 text-white font-black text-base uppercase tracking-wider px-8 py-4 rounded-2xl shadow-xl shadow-orange-500/25 hover:shadow-2xl hover:scale-105 transition-all gap-3">
+                            <span>¡PIDE TU CUPO DE CRÉDITO YA!</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-orion-500/20 to-orion-accent/30 rounded-full filter blur-2xl transform scale-90"></div>
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" 
+                             alt="Chica sonriente usando laptop en Finanzas Orion" 
+                             class="relative z-10 w-full h-auto object-cover rounded-3xl shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-300">
+                        
+                        <div class="absolute -bottom-6 -left-6 z-20 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-orion-accent/20 text-orion-accentDark flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-900">Aprobación en 15 min</p>
+                                <p class="text-[11px] text-slate-500">Sin salir de casa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-xs font-bold text-orion-500 uppercase tracking-widest">Paso a Paso</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-orion-800">¿Cómo solicitar tu dinero en Finanzas Orion?</p>
+                <p class="text-slate-600 text-base">Obtener tu préstamo en línea es súper fácil y rápido. Solo necesitas tu celular o computador.</p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                
+                <div class="bg-slate-50 border border-slate-200/60 rounded-3xl p-8 relative hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-orion-500 text-white font-black text-xl flex items-center justify-center shadow-lg shadow-orion-500/30 group-hover:scale-110 transition-transform mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-orion-800 mb-3">Simula y Selecciona</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Elige la cantidad exacta que requieres (desde $1M hasta $100M COP) y selecciona el número de cuotas deseado.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200/60 rounded-3xl p-8 relative hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-orion-accent text-orion-900 font-black text-xl flex items-center justify-center shadow-lg shadow-orion-accent/30 group-hover:scale-110 transition-transform mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-orion-800 mb-3">Solicita por WhatsApp</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Conéctate directamente con nuestro equipo de atención verificado por WhatsApp para validar tus datos en minutos.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200/60 rounded-3xl p-8 relative hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-orion-800 text-white font-black text-xl flex items-center justify-center shadow-lg shadow-orion-800/30 group-hover:scale-110 transition-transform mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-orion-800 mb-3">Recibe tu Desembolso</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Aprobada la solicitud, transferimos directamente el dinero a tu cuenta de ahorros o corriente registrada en Colombia.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section id="beneficios" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-orion-500 uppercase tracking-widest">Ventajas Competitivas</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-orion-800">¿Por qué elegir Finanzas Orion?</p>
+                <p class="text-slate-600">Diseñado para darte la libertad financiera que necesitas con total seguridad.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-orion-50 text-orion-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-orion-800 mb-2">100% Digital y Sin Papeleos</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Olvídate de imprimir documentos, hacer filas en sucursales o buscar fiadores. Todo se hace desde tu celular.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-orion-800 mb-2">Todos los Bancos de Colombia</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Desembolsamos directamente a Bancolombia, Davivienda, Nequi, Daviplata, BBVA, Banco de Bogotá y más.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-orion-800 mb-2">Transparencia Garantizada</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Conoce las condiciones antes de aceptar tu crédito. Sin cobros sorpresas ni términos ocultos al momento de pagar.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-500 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-orion-800 mb-2">Construye Historial Crediticio</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Reportamos positivamente tus pagos puntuales a las centrales de riesgo (Datacrédito y Cifin) para mejorar tu puntaje.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS & TESTIMONIALS SECTION (6 TOTAL REVIEWS) -->
+    <section id="opiniones" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-orion-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-orion-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orion-800 border border-slate-700 text-orion-accent text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-heart text-xs"></i> Clientes Satisfechos
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
+                    Lo que dicen nuestros clientes en Colombia
+                </h2>
+                <p class="text-slate-400 text-base max-w-2xl mx-auto">
+                    Miles de colombianos confían en Finanzas Orion para solucionar sus imprevistos y proyectos financieros.
+                </p>
+
+                <div class="flex items-center justify-center gap-3 pt-2">
+                    <div class="flex text-amber-400 text-lg">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-white font-extrabold text-lg">4.9 / 5.0</span>
+                    <span class="text-slate-400 text-sm">(+12.400 reseñas verificadas)</span>
+                </div>
+            </div>
+
+            <!-- 6 REVIEWS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- REVIEW 1 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Necesitaba solucionar un imprevisto con el arreglo de mi moto para trabajar y en menos de 20 minutos ya tenía el desembolso en mi Nequi. Sin filas ni papeleos."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-orion-500 to-orion-accent flex items-center justify-center text-orion-900 font-extrabold text-base shadow-md">
+                            CA
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Carlos Andrés Mendoza</h5>
+                            <p class="text-xs text-slate-400">Bogotá, D.C. • <span class="text-slate-500">Hace 2 días</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Súper recomendado. Lo mejor es que no piden fiador ni codeudores raros. Solo elegí el monto, las cuotas por WhatsApp y me aprobaron de inmediato."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white font-extrabold text-base shadow-md">
+                            MP
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Maria Paula Restrepo</h5>
+                            <p class="text-xs text-slate-400">Medellín, Antioquia • <span class="text-slate-500">Hace 5 días</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "He pedido ya 2 créditos con ellos para surtir mercancía de mi negocio. Siempre me responden súper rápido y la atención es personalizada."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-amber-400 to-orange-500 flex items-center justify-center text-orion-900 font-extrabold text-base shadow-md">
+                            JV
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Jorge Luis Vargas</h5>
+                            <p class="text-xs text-slate-400">Cali, Valle del Cauca • <span class="text-slate-500">Hace 1 semana</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REVIEW 4 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Estaba reportada por un saldo viejo de celular y los bancos no me ayudaban. Finanzas Orion evaluó mis ingresos actuales y me otorgó un cupo de $4 millones."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-teal-400 to-emerald-500 flex items-center justify-center text-slate-900 font-extrabold text-base shadow-md">
+                            SL
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Sandra Liliana Gómez</h5>
+                            <p class="text-xs text-slate-400">Bucaramanga, Santander • <span class="text-slate-500">Hace 2 semanas</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REVIEW 5 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Proceso transparente y seguro. Verifiqué su NIT en DataCrédito antes de solicitar y comprobé que son totalmente legítimos. Recomendados 100%."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-400 to-indigo-600 flex items-center justify-center text-white font-extrabold text-base shadow-md">
+                            FR
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Fernando Rodríguez</h5>
+                            <p class="text-xs text-slate-400">Barranquilla, Atlántico • <span class="text-slate-500">Hace 3 semanas</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REVIEW 6 -->
+                <div class="bg-slate-800/80 border border-slate-700/70 p-6 rounded-3xl backdrop-blur-sm shadow-xl flex flex-col justify-between hover:border-orion-accent/50 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check text-[9px]"></i> Cliente Verificado
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Soy independiente y casi ninguna entidad me daba crédito sin mil certificados. En Finanzas Orion me atendieron por WhatsApp y el mismo día tenía el desembolso."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-700/60 flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-rose-400 to-red-600 flex items-center justify-center text-white font-extrabold text-base shadow-md">
+                            DM
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm">Diana Marcela Osuna</h5>
+                            <p class="text-xs text-slate-400">Pereira, Risaralda • <span class="text-slate-500">Hace 1 mes</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTROS ALIADOS (POSITIONED DIRECTLY BELOW CUSTOMER REVIEWS) -->
+    <section id="aliados" class="py-16 bg-slate-100 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50/90 border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-lg text-center">
+                
+                <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">NETWORKING & ENTIDADES</span>
+                <h3 class="text-2xl sm:text-3xl font-black text-orion-500 mb-8">Nuestros aliados</h3>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
+                    
+                    <!-- ALIADO 1: RUES -->
+                    <div class="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm h-28 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                                <span class="w-3 h-3 rounded-full bg-lime-500"></span>
+                            </div>
+                            <span class="text-2xl font-black text-blue-900 tracking-tighter">rues</span>
+                            <span class="text-[10px] font-bold text-blue-700 uppercase tracking-tight">Registro Único Empresarial y Social</span>
+                        </div>
+                    </div>
+
+                    <!-- ALIADO 2: SUPERINTENDENCIA DE BANCOS -->
+                    <div class="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm h-28 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-center justify-center text-center">
+                            <div class="w-10 h-10 rounded-full border-2 border-blue-900 flex items-center justify-center mb-1">
+                                <i class="fa-solid fa-building-columns text-blue-900 text-base"></i>
+                            </div>
+                            <span class="text-xs font-extrabold text-slate-800 uppercase leading-tight">SUPERINTENDENCIA</span>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">DE BANCOS</span>
+                        </div>
+                    </div>
+
+                    <!-- ALIADO 3: COLOMBIA FINTECH -->
+                    <div class="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm h-28 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-center justify-center text-center">
+                            <div class="w-6 h-6 rotate-45 bg-rose-500 rounded-sm mb-1"></div>
+                            <span class="text-[10px] font-bold text-slate-400 tracking-widest uppercase">COLOMBIA</span>
+                            <span class="text-sm font-black text-slate-800 tracking-wider">FINTECH</span>
+                        </div>
+                    </div>
+
+                    <!-- ALIADO 4: DATACRÉDITO EXPERIAN -->
+                    <div class="flex items-center justify-center p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm h-28 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col items-center justify-center text-center">
+                            <div class="flex items-center gap-1 mb-0.5">
+                                <span class="w-2 h-2 rounded-sm bg-purple-600"></span>
+                                <span class="w-2 h-2 rounded-sm bg-pink-500"></span>
+                                <span class="text-sm font-black text-blue-900">datacrédito</span>
+                            </div>
+                            <span class="text-xs font-bold text-blue-500">experian.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-14">
+                <h2 class="text-xs font-bold text-orion-500 uppercase tracking-widest">Resuelve tus dudas</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-orion-800">Preguntas Frecuentes</p>
+            </div>
+
+            <div class="space-y-4" id="faqAccordion">
+                
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button class="faq-btn w-full p-6 text-left font-bold text-orion-800 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Cuáles son los requisitos para solicitar un crédito en Finanzas Orion?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50 leading-relaxed">
+                        Para solicitar tu crédito debes:
+                        <ul class="list-disc ml-5 mt-2 space-y-1">
+                            <li>Ser mayor de 18 años y ciudadano residente en Colombia.</li>
+                            <li>Tener cédula de ciudadanía original y vigente.</li>
+                            <li>Cuenta de ahorros o corriente activa a tu propio nombre (incluye Nequi o Daviplata).</li>
+                            <li>Número de celular personal activo con WhatsApp.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button class="faq-btn w-full p-6 text-left font-bold text-orion-800 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Cuánto tiempo tarda en llegar el dinero a mi cuenta?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50 leading-relaxed">
+                        Una vez aprobada tu solicitud, el desembolso se realiza de manera inmediata. Según los tiempos de compensación de tu entidad bancaria (ACH), el dinero estará reflejado en un rango de 15 minutos a un máximo de 2 horas en días hábiles.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden transition-all">
+                    <button class="faq-btn w-full p-6 text-left font-bold text-orion-800 flex justify-between items-center hover:bg-slate-50">
+                        <span>¿Puedo pagar mis cuotas antes del tiempo estipulado?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 pt-0 text-sm text-slate-600 border-t border-slate-100 bg-slate-50/50 leading-relaxed">
+                        ¡Por supuesto! En Finanzas Orion puedes realizar abonos extraordinarios o la cancelación anticipada total sin ningún tipo de multa ni penalización.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST & SECURITY BANNER -->
+    <section class="py-12 bg-slate-900 text-slate-300 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-lock text-3xl text-orion-accent"></i>
+                    <div>
+                        <h5 class="text-white font-bold text-sm">Seguridad Encriptada SSL 256-bit</h5>
+                        <p class="text-xs text-slate-400">Tus datos personales y financieros están totalmente blindados.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-scale-balanced text-3xl text-orion-accent"></i>
+                    <div>
+                        <h5 class="text-white font-bold text-sm">Entidad Legalmente Constituida</h5>
+                        <p class="text-xs text-slate-400">Orion Inversiones Financieras S.A.S. • NIT 900693700</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <i class="fa-solid fa-headset text-3xl text-orion-accent"></i>
+                    <div>
+                        <h5 class="text-white font-bold text-sm">Atención por WhatsApp</h5>
+                        <p class="text-xs text-slate-400">+57 311 448 6656 (Lunes a Sábado)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-orion-900 text-slate-400 pt-16 pb-12 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <svg class="h-14 w-auto bg-white px-3 py-2 rounded-xl shadow-sm" viewBox="0 0 520 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(110, 10)">
+                                <rect x="0" y="80" width="22" height="60" fill="black"/>
+                                <rect x="36" y="45" width="22" height="95" fill="black"/>
+                                <rect x="72" y="0" width="22" height="140" fill="black"/>
+                                <path d="M-20 120 L20 80 L52 100 L115 15 L95 15 M115 15 L115 35" stroke="black" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polygon points="120,5 85,15 110,40" fill="black"/>
+                            </g>
+                            <text x="235" y="130" font-family="'Georgia', 'Times New Roman', serif" font-weight="900" font-size="34" fill="black" letter-spacing="2">FINANZAS</text>
+                            <g transform="translate(0, 120)">
+                                <ellipse cx="105" cy="85" rx="75" ry="42" stroke="black" stroke-width="7" fill="none" transform="rotate(-15, 105, 85)"/>
+                                <ellipse cx="105" cy="85" rx="73" ry="40" stroke="#0066FF" stroke-width="6" fill="none" stroke-dasharray="160 300" transform="rotate(-15, 105, 85)"/>
+                                <text x="135" y="115" font-family="'Georgia', 'Times New Roman', serif" font-weight="900" font-size="105" fill="#0066FF" letter-spacing="-1">ORION</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <p class="leading-relaxed">
+                        Solución fintech en Colombia para solicitudes de crédito online rápida, segura y transparente.
+                    </p>
+                </div>
+
+                <div>
+                    <h6 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Validación Oficial</h6>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.datacreditoempresas.com.co/directorio/orion-inversiones-financieras-s-a-s.html" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline flex items-center gap-1.5 font-semibold">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                <span>Verificar en DataCrédito Empresas</span>
+                            </a>
+                        </li>
+                        <li><strong>Razón Social:</strong> Orion Inversiones Financieras S.A.S.</li>
+                        <li><strong>NIT:</strong> 900693700</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Legales & Políticas</h6>
+                    <ul class="space-y-2">
+                        <li><a href="#" onclick="showModal('Términos y Condiciones')" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+                        <li><a href="#" onclick="showModal('Política de Privacidad')" class="hover:text-white transition-colors">Política de Tratamiento de Datos</a></li>
+                        <li><a href="#" onclick="showModal('Tasas y Tarifas')" class="hover:text-white transition-colors">Tasas y Tarifas Vigentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="text-white font-bold uppercase tracking-wider mb-4 text-xs">Contacto Directo</h6>
+                    <p class="mb-2"><strong>WhatsApp:</strong> +57 311 448 6656</p>
+                    <p class="mb-2"><strong>Email:</strong> soporte@finanzasorion.co</p>
+                    <p class="mb-4">Bogotá D.C., Colombia</p>
+                    <div class="flex gap-3 text-base">
+                        <a href="https://wa.me/573114486656" target="_blank" class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:bg-emerald-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-[11px] leading-relaxed text-slate-500 space-y-4">
+                <p>
+                    Finanzas Orion (Orion Inversiones Financieras S.A.S., NIT 900693700) es una sociedad constituida conforme a las leyes colombianas. Cumplimos con la normativa vigente en materia de transparencia de crédito y protección al consumidor financiero.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-slate-800/60">
+                    <p>© 2026 Finanzas Orion. Todos los derechos reservados.</p>
+                    <p>Hecho con <i class="fa-solid fa-heart text-red-500 mx-0.5"></i> para Colombia</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP -->
+    <div id="modalOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative space-y-4">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="w-12 h-12 rounded-2xl bg-orion-50 text-orion-500 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <h4 id="modalTitle" class="text-xl font-bold text-orion-800">Información</h4>
+            <p id="modalBody" class="text-sm text-slate-600 leading-relaxed">
+                Información institucional de Finanzas Orion.
+            </p>
+            <button onclick="closeModal()" class="w-full bg-orion-500 text-white font-bold py-3 rounded-xl hover:bg-orion-600 transition-colors">
+                Entendido
+            </button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const amountSlider = document.getElementById('amountSlider');
+        const installmentsSlider = document.getElementById('installmentsSlider');
+        const amountDisplay = document.getElementById('amountDisplay');
+        const installmentsDisplay = document.getElementById('installmentsDisplay');
+        const summaryAmount = document.getElementById('summaryAmount');
+        const summaryInstallments = document.getElementById('summaryInstallments');
+
+        function formatCOP(num) {
+            return '$ ' + new Intl.NumberFormat('es-CO', { maximumFractionDigits: 0 }).format(num);
+        }
+
+        function updateCalculator() {
+            const amount = parseInt(amountSlider.value);
+            const installments = parseInt(installmentsSlider.value);
+
+            const amountFormatted = formatCOP(amount) + ' COP';
+            const installmentsFormatted = installments + (installments === 1 ? ' Cuota' : ' Cuotas');
+
+            amountDisplay.textContent = amountFormatted;
+            installmentsDisplay.textContent = installmentsFormatted;
+            
+            summaryAmount.textContent = amountFormatted;
+            summaryInstallments.textContent = installmentsFormatted.toLowerCase();
+        }
+
+        amountSlider.addEventListener('input', updateCalculator);
+        installmentsSlider.addEventListener('input', updateCalculator);
+
+        updateCalculator();
+
+        // FAQ ACCORDION
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.fa-chevron-down');
+                
+                const isOpen = !content.classList.contains('hidden');
+                
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn .fa-chevron-down').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // MOBILE MENU
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function showModal(title, message) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalBody').textContent = message || `Estás consultando ${title}. En Finanzas Orion puedes solicitar tu crédito 100% online y de forma segura.`;
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modalOverlay');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleLoanRequest() {
+            const amount = formatCOP(parseInt(amountSlider.value));
+            const installments = installmentsSlider.value;
+            const cuotasText = installments == 1 ? '1 cuota' : `${installments} cuotas`;
+            const phone = "573114486656";
+            const message = encodeURIComponent(`Hola Finanzas Orion, deseo solicitar un crédito por un monto de ${amount} COP a ${cuotasText}.`);
+            
+            window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
